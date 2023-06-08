@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>Личный кабинет</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="./index.html">App</a>
+        <div>
+          <nav>
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__link _active" href="./index.html"
+                  >Личный кабинет</a
+                >
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./login.html">Войти</a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__link" href="./register.html"
+                  >Зарегистрироваться</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="profile">
+      <div class="profile__container">
+        <div class="profile__info">
+          <div class="profile__avatar">
+            <img src="./static/avatar.jpg" alt="avatar" />
+          </div>
+          <div>
+            <div class="profile__fullname">Chel Chelovikov</div>
+            <div class="profile__city">г Рязань.</div>
+          </div>
+        </div>
+        <form class="form" method="post" action="./profile.php">
+          <fieldset class="form__fieldset">
+            <label class="label">
+              <span class="label__text">Логин</span>
+              <input class="input" type="text" name="login" />
+            </label>
+            <label class="label">
+              <span class="label__text">Email</span>
+              <input class="input" type="email" name="email" />
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <label class="label">
+              <span class="label__text">Имя</span>
+              <input class="input" type="text" name="firstname" />
+            </label>
+            <label class="label">
+              <span class="label__text">Фамилия</span>
+              <input class="input" type="text" name="lastname" />
+            </label>
+          </fieldset>
+          <button type="submit" class="btn">Сохранить</button>
+        </form>
+        <a href="./logout.php" class="logout">Выйти</a>
+      </div>
+    </main>
+  </body>
+</html>
